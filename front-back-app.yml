@@ -15,7 +15,7 @@ spec:
       containers:
       - name: front-end-container
         image: daluxonflux/frontend
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
 ---
 
 apiVersion: apps/v1
@@ -35,7 +35,7 @@ spec:
       containers:
         - name: back-end-container
           image: daluxonflux/backend
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
 ---
 
 apiVersion: v1
