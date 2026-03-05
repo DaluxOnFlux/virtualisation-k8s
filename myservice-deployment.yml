@@ -13,7 +13,7 @@ spec:
         app: myservice
     spec:
       containers:
-        - image: efrei/myservice:1
+        - image: daluxonflux/myservice
           imagePullPolicy: IfNotPresent
           name: myservice
       restartPolicy: Always
